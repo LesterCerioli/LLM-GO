@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# Data (large, not committed)
+data/raw/
+data/processed/
+data/tokenizer/
+
+# Training artifacts
+checkpoints/
+logs/
+*.h5
+*.safetensors
+
+# Secrets
+.env
+*.token
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

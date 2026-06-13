@@ -1,0 +1,11 @@
+# =============================================================================
+# GPU extras — install on top of requirements.txt for NVIDIA GPU training.
+# Requires CUDA 12.x + cuDNN 8.9+ on the host.
+# pip install -r requirements.txt -r requirements-gpu.txt
+# =============================================================================
+
+# TF GPU support — pulls in the correct CUDA wheels automatically
+tensorflow[and-cuda]==2.17.0
+
+# Flash-Attention is not available for TF natively; use XLA JIT instead.
+# XLA is enabled by default when use_xla=True in TrainingConfig.

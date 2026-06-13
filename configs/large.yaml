@@ -1,0 +1,32 @@
+model:
+  model_type: large
+  vocab_size: 32000
+  max_seq_len: 4096
+  d_model: 1280
+  n_heads: 20
+  n_layers: 36
+  d_ff: 5120
+  dropout: 0.1
+  attention_dropout: 0.1
+  rope_theta: 10000.0
+  tie_embeddings: true
+
+training:
+  learning_rate: 1.5e-4
+  weight_decay: 0.1
+  warmup_steps: 5000
+  max_steps: 400000
+  batch_size: 8
+  gradient_accumulation_steps: 16
+  mixed_precision: bfloat16
+  lr_schedule: cosine
+  min_lr_ratio: 0.1
+  gradient_clip: 1.0
+  save_every_n_steps: 5000
+  eval_every_n_steps: 2500
+  log_every_n_steps: 200
+
+data:
+  processed_dir: data/processed
+  tokenizer_dir: data/tokenizer
+  vocab_size: 32000
