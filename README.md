@@ -1,4 +1,4 @@
-# llm-go
+# LLM-GO
 
 A Go-specialized large language model built with TensorFlow 2 and Python 3.12. Trained on all Golang versions (1.0–1.24), the Fiber and Cobra ecosystems, real-world project patterns, and Go best practices. Published to Hugging Face as an open-source model under the Apache 2.0 license.
 
